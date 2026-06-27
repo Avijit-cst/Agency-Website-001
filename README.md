@@ -2,7 +2,8 @@
 
 GadgetBD is a modern, responsive, and feature-rich E-commerce web application specialized in selling original tech gadgets and accessories in Bangladesh. The platform offers a seamless shopping experience with flash sales, categorized product browsing, and featured product highlights.
 
-![GadgetBD Homepage Overview](image_6099c6.jpg)
+<img width="1920" height="3735" alt="image" src="https://github.com/user-attachments/assets/8e1fde25-fb90-44ac-8250-faf4927dd81b" />
+
 
 ---
 
