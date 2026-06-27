@@ -1,0 +1,271 @@
+/* --- General Styling --- */
+:root {
+    --primary-color: #0d6efd;
+    --secondary-color: #6c757d;
+    --bg-dark: #0A0A0A;
+}
+
+body {
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    overflow-x: hidden;
+}
+
+/* --- Navbar --- */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 15px 0;
+}
+
+.nav-search-input {
+    width: 250px !important;
+    transition: width 0.3s ease;
+}
+@media (min-width: 992px) {
+    .nav-search-input {
+        width: 400px !important;
+    }
+}
+
+.nav-icons .material-symbols-outlined {
+    font-size: 28px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+.nav-icons .material-symbols-outlined:hover {
+    color: var(--primary-color);
+}
+
+.category-nav {
+    border-bottom: 1px solid #eee;
+    overflow-x: auto;
+    white-space: nowrap;
+    padding: 10px 0;
+    scrollbar-width: none; /* Firefox */
+}
+.category-nav::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+.category-nav .nav-link {
+    font-weight: 500;
+    color: #555;
+    padding: 5px 15px !important;
+}
+.category-nav .nav-link.active {
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+/* --- Hero Section --- */
+.section {
+    background: url('https://img.freepik.com/free-photo/black-friday-sales-sign-neon-light_23-2151833076.jpg?semt=ais_hybrid&w=740&q=80');
+    background-size: cover;
+    background-position: center;
+    min-height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+/* Dark overlay for better text readability */
+.section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.6); 
+}
+
+.hero {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+    padding-top: 40px;
+}
+.hero h1 {
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Hero Buttons (Made Smaller) */
+.hero .btn-group {
+    gap: 15px; /* Increased gap between buttons */
+}
+
+@media (max-width: 768px) {
+    .section {
+        min-height: auto;
+        padding: 80px 0;
+    }
+    .hero {
+        text-align: center;
+    }
+    .hero .btn-group {
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+/* --- Categories --- */
+.category-card {
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    cursor: pointer;
+}
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+.category-card .material-symbols-outlined {
+    font-size: 40px;
+    color: var(--primary-color);
+}
+.category-card .card-text {
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.category-card small {
+    color: #888;
+    font-size: 0.85rem;
+}
+
+/* --- Product Cards (Flash Sale & Featured) --- */
+.product-card {
+    border: none;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+.product-card:hover {
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    transform: translateY(-3px);
+}
+.product-card img {
+    object-fit: cover;
+    height: 200px; /* Fixed height for consistency */
+    width: 100%;
+}
+.price {
+    font-weight: 700;
+    color: #333;
+}
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-size: 0.9rem;
+    margin-left: 8px;
+}
+.rating {
+    font-size: 0.85rem;
+    color: #f39c12; /* Star color */
+}
+.btn-add-cart {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* --- Footer Up --- */
+.footer-up {
+    background-color: #f8f9fa;
+    padding: 40px 0;
+}
+.footer-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.footer-item .material-symbols-outlined {
+    font-size: 32px;
+    color: var(--primary-color);
+}
+.footer-item h4 {
+    font-size: 1.1rem;
+    margin-bottom: 2px;
+}
+.footer-item p {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0;
+}
+
+/* --- Footer --- */
+.sections {
+    background: #0A0A0A;
+    color: #fff;
+    padding: 60px 0 20px;
+}
+.col.brand h5 {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+}
+.col.brand span { color: #3b82f6; }
+.desc { color: #9CA3AF; font-size: 14px; line-height: 1.7; }
+
+.socials a {
+    width: 36px; height: 36px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.1);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    margin-right: 8px;
+    transition: 0.3s;
+}
+.socials a:hover { background: #3b82f6; }
+
+.col h6 {
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+.link {
+    display: block;
+    color: #9CA3AF;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: 0.2s;
+}
+.link:hover { color: #fff; padding-left: 5px; }
+
+.info {
+    color: #9CA3AF;
+    font-size: 14px;
+    margin-bottom: 12px;
+    display: flex;
+    gap: 10px;
+}
+.info i { margin-top: 4px; }
+
+.hr {
+    background: rgba(255,255,255,0.1);
+    height: 1px;
+    margin: 30px 0;
+}
+.bottom { display: flex; justify-content: space-between; align-items: center; }
+.payments span {
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    margin-left: 5px;
+    color: #ccc;
+}
+
+/* Mobile Footer Adjustments */
+@media (max-width: 768px) {
+    .footer-item {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .bottom {
+        flex-direction: column;
+        gap: 15px;
+        text-align: center;
+    }
+}
