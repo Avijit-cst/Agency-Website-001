@@ -20,7 +20,7 @@ GadgetBD is a modern, responsive, and feature-rich E-commerce web application sp
 
 ## 🛠️ Tech Stack
 
-*   **Frontend:** HTML5, CSS3 / Tailwind CSS, JavaScript (React.js / Next.js recommended)
+*   **Frontend:** HTML5, CSS3 / Tailwind CSS, 
 *   **Icons:** FontAwesome or React Icons
 *   **Design Paradigm:** Clean, Component-Based, Responsive Grid Layout
 
